@@ -2,7 +2,7 @@ version: '2'
 services: 
   django-clase:
     # build: .
-    image: docker-api-devf
+    image: api-damificados
     ports:
       - "8000:8000"
   docker-mysql:
