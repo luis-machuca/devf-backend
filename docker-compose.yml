@@ -1,11 +1,15 @@
 version: '2'
 services: 
-  django-clase:
+  django-clase-dos:
     # build: .
     image: api-damificados
     ports:
       - "8000:8000"
+    # environment:
+      # - DJANGO_ENV=production
+    # container_name: pruebuqui-container
   docker-mysql:
     image: mysql
     environment:
       - MYSQL_ROOT_PASSWORD=Mipass_12345
+      - MYSQL_DATABASE=danmificadosDb
